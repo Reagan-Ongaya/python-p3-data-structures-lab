@@ -15,6 +15,13 @@ spicy_foods = [
         "heat_level": 6,
     },
 ]
+spicy_food =[
+        {
+        "name": "Mapo Tofu",
+        "cuisine": "Sichuan",
+        "heat_level": 6,
+    }
+]
 
 def get_names(spicy_foods):
     return [food['name']for food in spicy_foods]
@@ -80,4 +87,6 @@ result = get_average_heat_level(spicy_foods)
 print(result)
 
 def create_spicy_food(spicy_foods, spicy_food):
-    pass
+    spicy_food = create_spicy_food(spicy_foods, spicy_food)
+
+print(create_spicy_food)
